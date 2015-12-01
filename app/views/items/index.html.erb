@@ -1,17 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Контролируемые параметры</h1>
+<h1>Параметры</h1>
 
 <table>
   <thead>
     <tr>
 <!--      <th>Name</th>-->
+      <th>Название</th>
       <th>Значение</th>
       <th>Качество</th>
       <th>Время</th>
 <!--      <th>Rate</th>
       <th>Units</th>-->
-      <th>Название</th>
       <th>Описание</th>
 <!--      <th>Enabled</th>-->
       <th colspan="3"></th>
@@ -22,17 +22,17 @@
     <% @items.each do |item| %>
       <tr>
 <!--        <td><%= item.name %></td>-->
+        <td><%= item.label %></td>
         <td><%= item.value %></td>
         <td><%= item.quality %></td>
         <td><%= item.time %></td>
 <!--        <td><%= item.rate %></td>
         <td><%= item.units %></td>-->
-        <td><%= item.label %></td>
         <td><%= item.description %></td>
 <!--        <td><%= item.enabled %></td>-->
-        <td><%= link_to 'Смт', item %></td>
+        <td><%= link_to 'Просм', item %></td>
         <td><%= link_to 'Изм', edit_item_path(item) %></td>
-        <td><%= link_to 'Удл', item, method: :delete, data: { confirm: 'Уверен?' } %></td>
+        <td><%= link_to 'Удал', item, method: :delete, data: { confirm: 'Уверен?' } %></td>
       </tr>
     <% end %>
   </tbody>

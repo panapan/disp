@@ -1,4 +1,5 @@
 class ItemsController < ApplicationController
+  layout "refresh", only: [:index, :show]
   before_action :set_item, only: [:show, :edit, :update, :destroy]
 
   # GET /items
