@@ -1,4 +1,4 @@
 # Internet dispatcher app
 
-[*This app on Heroku*](http://orel.herokuapp.com)
+[*This app on Heroku*](http://chp.herokuapp.com)
 
