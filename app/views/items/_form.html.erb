@@ -1,7 +1,7 @@
 <%= form_for(@item) do |f| %>
   <% if @item.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
+      <h2>Ошибки:</h2>
 
       <ul>
       <% @item.errors.full_messages.each do |message| %>
@@ -12,39 +12,39 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    Имя<br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :value %><br>
+    Значение<br>
     <%= f.text_field :value %>
   </div>
   <div class="field">
-    <%= f.label :quality %><br>
+    Качество<br>
     <%= f.number_field :quality %>
   </div>
   <div class="field">
-    <%= f.label :time %><br>
+    Время<br>
     <%= f.text_field :time %>
   </div>
   <div class="field">
-    <%= f.label :rate %><br>
+    Период<br>
     <%= f.number_field :rate %>
   </div>
   <div class="field">
-    <%= f.label :units %><br>
+    Единицы<br>
     <%= f.text_field :units %>
   </div>
   <div class="field">
-    <%= f.label :label %><br>
+    Название<br>
     <%= f.text_field :label %>
   </div>
   <div class="field">
-    <%= f.label :description %><br>
+    Описание<br>
     <%= f.text_field :description %>
   </div>
   <div class="field">
-    <%= f.label :enabled %><br>
+    Вкл<br>
     <%= f.check_box :enabled %>
   </div>
   <div class="actions">
