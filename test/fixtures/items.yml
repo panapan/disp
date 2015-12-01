@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  value: MyString
+  quality: 1
+  time: MyString
+  rate: 1
+  units: MyString
+  label: MyString
+  description: MyString
+  enabled: false
+
+two:
+  name: MyString
+  value: MyString
+  quality: 1
+  time: MyString
+  rate: 1
+  units: MyString
+  label: MyString
+  description: MyString
+  enabled: false
