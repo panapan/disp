@@ -3,4 +3,5 @@
 <%= render 'form' %>
 
 <%= link_to 'Просмотр', @item %> |
+<%= link_to 'Удал', @item, method: :delete, data: { confirm: 'Уверен?' } %> |
 <%= link_to 'Список', items_path %>
